@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="CSS/index.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!--Icon-->
+    <link rel="icon" href="assets/UTL.png" type="image/png" />
+    <!--Titulo-->
+    <title>Universidad Tecnológica de León</title>
+  </head>
+
+  <body>
+    <!--Barra de navegación-->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary"
+      style="
+        height: 90px;
+        background: linear-gradient(120deg, #000c34 19.2%, #009379 85.8%);
+      "
+    >
+      <div class="container-fluid" style="margin-top: 10px">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="assets/UTL.png"
+            style="width: 60px; height: 60px; margin-right: 5px"
+            alt=""
+          />
+        </a>
+        <div
+          style="
+            display: inline-block;
+            color: white;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            text-align: left;
+            font-size: large;
+          "
+        >
+          Universidad Tecnológica de León
+          <p
+            style="
+              color: white;
+              font-size: 14px;
+              font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+              text-align: left;
+            "
+          >
+            Ser, Saber, Hacer
+          </p>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="width: 180px">
+              <p
+                id="fecha-hora"
+                style="color: white; font-size: 12px; margin-left: 30px"
+              ></p>
+            </li>
+          </ul>
+          <button
+            id="menu-toggle"
+            class="btn"
+            type="button"
+            style="
+              border-style: none;
+              margin-left: 480px;
+              background-color: transparent;
+            "
+          >
+            <img
+              src="assets/menu-icon1.png"
+              style="color: white; width: 40px; height: 40px"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
+    </nav>
+    <br />
+
+    <!--Barra lateral-->
+    <div id="sidebar" class="sidebar">
+      <button
+        id="close-btn"
+        class="close-btn btn-danger"
+        style="margin-left: 10px; border-radius: 5px"
+      >
+        X
+      </button>
+      <ul>
+        <li><a href="#">Somos UTL</a></li>
+        <li><a href="#">Soy Aspirante</a></li>
+        <li><a href="#">Soy Estudiante</a></li>
+        <li><a href="#">Soy Docente</a></li>
+        <li><a href="#">Soy Administrativo/a</a></li>
+        <li><a href="#">Soy Empresario/a</a></li>
+        <li><a href="#">Soy Egresado/a</a></li>
+      </ul>
+    </div>
+    <br />
+
+    <!--Carrusel-->
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="assets/Leon-Cosmico.jpg"
+            class="d-block mx-auto"
+            alt="Imagen 1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/personas.jpg"
+            class="d-block mx-auto"
+            style="width: 1000px"
+            alt="Imagen 2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/estudiantes.jpg"
+            class="d-block mx-auto"
+            style="width: 1000px"
+            alt="Imagen 3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <!--Tab principal-->
+    <div class="row" style="margin-left: 50px">
+      <div class="wrap">
+        <ul class="tabs" style="border-radius: 30px 30px 0 0">
+          <li>
+            <a href="#tab1"
+              ><span class="fa fa-home"></span
+              ><span class="tab-text">Noticias</span></a
+            >
+          </li>
+          <li>
+            <a href="#tab2"
+              ><span class="fa fa-group"></span
+              ><span class="tab-text">¿Quiénes somos?</span></a
+            >
+          </li>
+          <li>
+            <a href="#tab3"
+              ><span class="fa fa-briefcase"></span
+              ><span class="tab-text">Mensaje Institucional</span></a
+            >
+          </li>
+          <li>
+            <a href="#tab4"
+              ><span class="fa fa-bookmark"></span
+              ><span class="tab-text">Normativa</span></a
+            >
+          </li>
+        </ul>
+
+        <!--Tab1-->
+        <div class="secciones" style="overflow-y: scroll; margin-bottom: 5px">
+          <article id="tab1">
+            <div class="container mt-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      src="assets/noticia1.jpg"
+                      style="height: 230px; width: 240px"
+                      class="card-img"
+                      alt="Imagen de la tarjeta"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        UTL en Conversatorio “Educación para Sustentabilidad -
+                        La educación y el Desarrollo”
+                      </h5>
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >viernes, 22 de Septiembre de 2023</small
+                        >
+                      </p>
+                      <p class="card-text" style="font-size: small">
+                        UTL en Conversatorio “Educación para Sustentabilidad -
+                        La educación y el Desarrollo”UTL en Conversatorio
+                        “Educación para Sustentabilidad - La educación y el
+                        Desarrollo”
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br />
+
+            <div class="container mt-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      src="assets/noticia2.png"
+                      style="height: 180px; width: 230px"
+                      class="card-img"
+                      alt="Imagen de la tarjeta"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        UTL en programa “Hablemos de discapacidad”
+                      </h5>
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >martes, 19 de Septiembre de 2023</small
+                        >
+                      </p>
+                      <p class="card-text" style="font-size: small">
+                        UTL en programa “Hablemos de discapacidad” con el
+                        proyecto MUSII
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br />
+            <h3>Avisos y Servicios</h3>
+            <hr style="color: black" />
+
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/aviso1.png"
+                    style="width: 400px"
+                    class="d-block mx-auto"
+                    alt="Imagen 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/aviso2.png"
+                    class="d-block mx-auto"
+                    style="width: 400px"
+                    alt="Imagen 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/aviso3.png"
+                    class="d-block mx-auto"
+                    style="width: 400px"
+                    alt="Imagen 3"
+                  />
+                </div>
+              </div>
+            </div>
+            <br />
+            <br />
+            <h3>Eventos</h3>
+            <hr style="color: black" />
+            <br />
+            <div class="calendar" style="border: none; width: 580px">
+              <div
+                class="header"
+                style="
+                  background-color: #009379;
+                  padding: 5px;
+                  border-radius: 5px;
+                "
+              >
+                <button id="prevMonth" class="btn-sm"><</button>
+                <h1 id="currentMonth" style="color: #fff">Septiembre 2023</h1>
+                <button id="nextMonth" class="btn-sm">></button>
+              </div>
+              <table style="width: 500px; align-content: center">
+                <thead>
+                  <tr>
+                    <th>Domingo</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sábado</th>
+                  </tr>
+                </thead>
+                <tbody id="calendarBody">
+                  <!-- Aquí se generará el calendario dinámicamente -->
+                </tbody>
+              </table>
+            </div>
+            <br />
+            <div class="container mt-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Simulacro</h5>
+                      <p class="card-text">
+                        Evaluar la capacidad de respuesta y atención a los
+                        protocolos de emergencia por parte de la Comunidad
+                        Educativa y de la Unidad Interna de Protección Civil
+                        (brigadas, personal y alumnado).
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">Evento del 07/12/2023</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab2-->
+          <article id="tab2">
+            <div class="container mt-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      src="assets/leon.jpg"
+                      style="height: 380px"
+                      class="card-img"
+                      alt="Imagen de la tarjeta"
+                    />
+                  </div>
+                  <div
+                    class="col-md-8"
+                    style="background-color: rgb(236, 233, 233)"
+                  >
+                    <div class="card-body">
+                      <h5 class="card-title">Historia</h5>
+                      <p class="card-text">
+                        La Universidad Tecnológica de León inició su
+                        funcionamiento el 26 de septiembre de 1995, con la
+                        inauguración de cursos efectuada por el C. Vicente Fox
+                        Quesada, Gobernador Constitucional del Estado de
+                        Guanajuato, ante la presencia de altas personalidades
+                        del gobierno federal, estatal, municipal y la comunidad
+                        universitaria. Desde el 25 de septiembre de 1995 y hasta
+                        la fecha, formamos ciudadanos y ciudadanas de bien, con
+                        pensamiento global y acción local, con innovación,
+                        profundos valores humanos y universales y sobre todo,
+                        brindando educación tecnológica y de calidad, orientada
+                        a la industria 4.0 y la mente-factura”.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+          </article>
+
+          <!--Tab3-->
+          <article id="tab3">
+            <div class="card">
+              <b>
+                <div class="card-header" style="font-size: 26px">
+                  Mensaje de Nuestra Rectora
+                </div></b
+              >
+              <div class="card-body">
+                <br />
+                <img
+                  src="assets/rectora.jpg"
+                  style="
+                    width: 250px;
+                    height: 350px;
+                    margin-left: 200px;
+                    margin-bottom: 10px;
+                  "
+                  class="card-img"
+                  alt="Imagen de la tarjeta"
+                />
+                <br />
+                <p class="card-text">
+                  Es un gusto muy especial dirigirme a todas y todos los
+                  integrantes de la Comunidad UTL: estudiantado, personal
+                  docente y administrativo, y demás plantilla actoral de nuestro
+                  entorno universitario. Desde marzo ya estamos de regreso a
+                  casa. Y en este deseo de normalizar nuestra vida
+                  universitaria, hemos vivenciado un proceso necesario de
+                  reencuentro, de reconocimiento, para compensar esos meses de
+                  confinamiento que afectaron nuestra forma de relacionarnos
+                  personal y colectivamente.
+                </p>
+                <p class="card-text">
+                  Pero si algo nos define, es que somos una institución
+                  tecnológicamente humana, en innovación y adaptación constante.
+                  Y en esta nueva realidad, que nos enfocamos en dar prioridad a
+                  la salud, atendiendo en todo momento a las medidas sanitarias
+                  para mantener a raya todo contagio.
+                </p>
+                <p class="card-text">
+                  Además, es necesario, como dice nuestro Gobernador Diego
+                  Sinhué Rodríguez, reinventarnos para ser mejores, esto es,
+                  crear nuevas formas de realizar el proceso formativo,
+                  académico, administrativo para que nuestra UTL siga siendo
+                  considerada un bastión importante del ecosistema educativo
+                  guanajuatense.
+                </p>
+                <p class="card-text">
+                  Como bien lo dice nuestro lema “Somos Leones, Somos Leonas”,
+                  les invito a construir entre todos una “guarida segura” donde
+                  prevalezca un ambiente de colaboración y convivencia, donde
+                  nos sintamos a gusto en “nuestra guarida”, promoviendo una
+                  cultura de paz y de respeto a nuestros derechos humanos
+                  fundamentales. Acorde a los nuevos tiempos, mostremos a la
+                  sociedad que la UTL es íntegra, inclusiva y sostenible.
+                </p>
+                <small style="font-weight: bold"
+                  >Yoloxóchitl Bustamante Díez
+                </small>
+                <br />
+                <small>Encargada del Despacho de Rectoría</small>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab4-->
+          <article id="tab4">
+            <div class="card">
+              <div class="card-header">ÁMBITO ADMINISTRATIVO</div>
+              <div class="card-body">
+                <a href="#">Lineamientos Convenios y Contratos UTL</a>
+                <br />
+                <a href="#"> Decreto 240</a>
+                <br />
+                <a href="#">
+                  Reglamento Interior de la Universidad Tecnológica de León</a
+                >
+                <br />
+                <a href="#"> Reglamento del Consejo Directivo</a>
+                <br />
+                <a href="#"> Reglamento de Ingresos Propios</a>
+                <br />
+                <a href="#"> Reglamento RIPPPA</a>
+                <br />
+                <a href="#"> Código de Conducta</a>
+                <br />
+                <a href="#">
+                  Políticas para Establecer la Carga Académica del profesorado
+                  de la Universidad Tecnológica de León</a
+                >
+                <br />
+                <a href="#"> Políticas de uso de estacionamiento</a>
+                <br />
+                <a href="#">
+                  Criterios Generales para la Organización de los Archivos</a
+                >
+              </div>
+            </div>
+            <br />
+
+            <div class="card">
+              <div class="card-header">ÁMBITO EDUCATIVO</div>
+              <div class="card-body">
+                <a href="#"> Decreto 240</a>
+                <br />
+                <a href="#">
+                  Reglamento Interior de la Universidad Tecnológica de León</a
+                >
+                <br />
+                <a href="#"> Reglamento Académico</a>
+                <br />
+                <a href="#"> Reglamento de Servicios Bibliotecarios</a>
+                <br />
+                <a href="#">
+                  Lineamientos Generales del Centro de Información</a
+                >
+                <br />
+                <a href="#"> Presea León UTL</a>
+                <br />
+                <a href="#"> Presea Moneda UTL</a>
+                <br />
+                <a href="#"> Reglamento Deportivo</a>
+              </div>
+            </div>
+            <br />
+
+            <div class="card">
+              <div class="card-header">ÁMBITO LABORAL</div>
+              <div class="card-body">
+                <a href="#"> Decreto 240</a>
+                <br />
+                <a href="#">
+                  Reglamento Interior de la Universidad Tecnológica de León</a
+                >
+                <br />
+                <a href="#">Contrato Colectivo</a>
+              </div>
+            </div>
+            <br />
+          </article>
+        </div>
+      </div>
+
+      <!--Botones laterales-->
+      <div style="margin-left: 15px; width: 50px">
+        <br />
+        <br />
+        <br />
+        <button
+          class="btn btn-primary btn-sm"
+          style="margin-bottom: 15px; margin-top: 5px; width: 205px"
+        >
+          SITO
+        </button>
+        <br />
+        <button
+          class="btn btn-primary btn-sm"
+          style="margin-bottom: 15px; width: 205px"
+        >
+          CALENDARIO ESCOLAR
+        </button>
+        <br />
+        <button
+          class="btn btn-primary btn-sm"
+          style="margin-bottom: 15px; width: 205px"
+        >
+          AULA VIRTUAL
+        </button>
+        <br />
+        <button
+          class="btn btn-primary btn-sm"
+          style="margin-bottom: 15px; width: 205px"
+        >
+          CORREO ELECTRONICO
+        </button>
+        <br />
+        <button
+          class="btn btn-primary btn-sm"
+          style="margin-bottom: 15px; width: 205px"
+        >
+          BIBLIOTECA DIGITAL
+        </button>
+        <br />
+        <button
+          class="btn btn-primary btn-sm"
+          style="margin-bottom: 15px; width: 205px"
+        >
+          ¿QUIERES TRABAJAR EN UTL?
+        </button>
+        <br />
+        <button
+          class="btn btn-primary btn-sm"
+          style="margin-bottom: 15px; width: 205px"
+        >
+          TRANSPARENCIA
+        </button>
+        <br />
+        <button
+          class="btn btn-primary btn-sm"
+          style="margin-bottom: 15px; width: 205px"
+        >
+          UTL EN CIFRAS
+        </button>
+        <br />
+      </div>
+    </div>
+
+    <br />
+
+    <!--Pie de página-->
+    <footer style="background-color: #000c34; text-align: center">
+      <!--Logos de pie de página-->
+      <img
+        src="assets/logos.jpg"
+        style="border-color: gray; border-style: outset; width: 1120px"
+        alt=""
+      />
+      <div style="background-color: #009379">
+        <br />
+      </div>
+      <br />
+      <div class="texto-footer" style="color: #fff; font-size: smaller">
+        <p>Blvd. Universidad Tecnológica #225 Col. San Carlos</p>
+      </div>
+      <div class="texto-footer1" style="color: #fff; font-size: smaller">
+        <p>CP. 37670 León, Gto. Mex. l Tel (477) 7 10 00 20</p>
+      </div>
+      <div class="texto-footer2" style="color: #009379; font-size: smaller">
+        <p [href]="url">Aviso de Privacidad Simplificado</p>
+        <p style="color: #fff; padding: 5px">|</p>
+        <p [href]="url">Aviso de Privacidad Integral</p>
+      </div>
+    </footer>
+    <!-- jQuery,Popper.js y Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--JS-->
+    <script src="JS/index.js"></script>
+  </body>
+</html>
