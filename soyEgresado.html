@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="CSS/egresado.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!--Icon-->
+    <link rel="icon" href="assets/UTL.png" type="image/png" />
+    <!--Titulo-->
+    <title>Universidad Tecnológica de León</title>
+  </head>
+
+  <body>
+    <!--Barra de navegación-->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary"
+      style="
+        height: 90px;
+        background: linear-gradient(120deg, #000c34 19.2%, #009379 85.8%);
+      "
+    >
+      <div class="container-fluid" style="margin-top: 10px">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="assets/UTL.png"
+            style="width: 60px; height: 60px; margin-right: 5px"
+            alt=""
+          />
+        </a>
+        <div
+          style="
+            display: inline-block;
+            color: white;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            text-align: left;
+            font-size: large;
+          "
+        >
+          Universidad Tecnológica de León
+          <p
+            style="
+              color: white;
+              font-size: 14px;
+              font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+              text-align: left;
+            "
+          >
+            Ser, Saber, Hacer
+          </p>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="width: 180px">
+              <p
+                id="fecha-hora"
+                style="color: white; font-size: 12px; margin-left: 30px"
+              ></p>
+            </li>
+          </ul>
+          <button
+            id="menu-toggle"
+            class="btn"
+            type="button"
+            style="
+              border-style: none;
+              margin-left: 480px;
+              background-color: transparent;
+            "
+          >
+            <img
+              src="assets/menu-icon1.png"
+              style="color: white; width: 40px; height: 40px"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
+    </nav>
+    <br />
+
+    <!--Barra lateral-->
+    <div id="sidebar" class="sidebar">
+      <button
+        id="close-btn"
+        class="close-btn btn-danger"
+        style="margin-left: 10px; border-radius: 5px"
+      >
+        X
+      </button>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Somos UTL</a></li>
+        <li><a href="#">Soy Aspirante</a></li>
+        <li><a href="#">Soy Estudiante</a></li>
+        <li><a href="#">Soy Docente</a></li>
+        <li><a href="#">Soy Administrativo/a</a></li>
+        <li><a href="#">Soy Empresario/a</a></li>
+        <li><a href="#">Soy Egresado/a</a></li>
+      </ul>
+    </div>
+    <div style="margin-left: 30px">
+      <h1>SOY EGRESADO/A</h1>
+      <hr style="color: #000000; font-weight: bold; font-size: large" />
+    </div>
+    <!--Botones laterales-->
+    <div style="margin-left: 35px">
+      <button
+        class="btn btn-primary btn-sm"
+        style="margin-bottom: 6px; margin-top: 2px; width: 245px"
+      >
+        ¿QUIERES TRABAJAR EN LA UTL?
+      </button>
+      <button
+        class="btn btn-primary btn-sm"
+        style="margin-bottom: 5px; width: 245px"
+      >
+        DIRECTORIO
+      </button>
+      <button
+        class="btn btn-primary btn-sm"
+        style="margin-bottom: 5px; width: 245px"
+      >
+        OFICINAS DE ESCOLARES
+      </button>
+      <button
+        class="btn btn-primary btn-sm"
+        style="margin-bottom: 5px; width: 245px"
+      >
+        BUZÓN INSTITUCIONAL
+      </button>
+    </div>
+    <!--Tab principal-->
+    <div class="Container" style="margin-left: 50px">
+      <br />
+      <div class="wrap">
+        <ul class="tabs" style="border-radius: 30px 30px 0 0">
+          <li>
+            <a href="#tab1"
+              ><span class="fa fa-home"></span
+              ><span class="tab-text">Nuestra Rectora</span></a
+            >
+          </li>
+          <li>
+            <a href="#tab2"
+              ><span class="fa fa-group"></span
+              ><span class="tab-text">Bolsa de Trabajo</span></a
+            >
+          </li>
+          <li>
+            <a href="#tab3"
+              ><span class="fa fa-briefcase"></span
+              ><span class="tab-text">Emprendimiento</span></a
+            >
+          </li>
+          <li>
+            <a href="#tab4"
+              ><span class="fa fa-bookmark"></span
+              ><span class="tab-text">Educación Continua</span></a
+            >
+          </li>
+          <li>
+            <a href="#tab5"
+              ><span class="fa fa-bookmark"></span
+              ><span class="tab-text">Contáctanos</span></a
+            >
+          </li>
+        </ul>
+
+        <!--Tab1-->
+        <div class="secciones" style="overflow-y: scroll; margin-bottom: 5px">
+          <article id="tab1">
+
+
+            <div class="card">
+              <b>
+                <div
+                  class="card-header"
+                  style="
+                    font-size: 26px;
+                    background-color: #0b2e78;
+                    color: #fff;
+                  "
+                >
+                  Mensaje de Nuestra Rectora
+                </div></b
+              >
+              <div class="card-body" style="background-color: #f6f7fa">
+                <br />
+                <img
+                  src="assets/rectora.jpg"
+                  style="
+                    width: 250px;
+                    height: 350px;
+                    margin-left: 200px;
+                    margin-bottom: 10px;
+                  "
+                  class="card-img"
+                  alt="Imagen de la tarjeta"
+                />
+                <br />
+                <p class="card-text">Estimada, estimado egresado:</p>
+                <p class="card-text">
+                  Para nosotros es un orgullo que hayas culminado tus estudios
+                  en nuestra Casa de Estudios y te encuentres en otra etapa de
+                  tu vida como profesionista. Como parte de nuestra Comunidad
+                  UTL, nos interesa mucho mantener lazos comunicativos contigo
+                  porque tenemos áreas de servicio y atención para ti. Queremos
+                  que sientas la puerta siempre abierta de tu universidad para
+                  brindarte herramientas o recursos para tu exitoso desarrollo
+                  profesional.
+                </p>
+                <p class="card-text">
+                  Es por ello que en esta zona dedicada exclusivamente a ti,
+                  podrás encontrar información constante sobre la bolsa de
+                  trabajo, proyectos de incubación empresarial, educación
+                  continua e incluso la oportunidad de integrarte a nuestro
+                  equipo de trabajo, ya sea como administrativo o docente de
+                  nuestra universidad.
+                </p>
+                <p class="card-text">
+                  Como egresada o egresado, la UTL te acompaña, porque la UTL
+                  está donde tú estés.
+                </p>
+                <small style="font-weight: bold"
+                  >Yoloxóchitl Bustamante Díez
+                </small>
+                <br />
+                <small>Encargada del Despacho de Rectoría</small>
+              </div>
+            </div>
+
+
+
+          </article>
+
+          <!--Tab2-->
+          <article id="tab2">
+            <div class="container mt-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      src="assets/bolsa.jpg"
+                      style="height: 280px; width: 400px"
+                      class="card-img"
+                      alt="Imagen de la tarjeta"
+                    />
+                  </div>
+                  <div class="col-md-8" style="background-color: #f6f7fa">
+                    <div class="card-body">
+                      <h5 class="card-title">Bolsa de Trabajo</h5>
+                      <p class="card-text">
+                        Bolsa de Trabajo es un espacio para que tú como egresado/a puedas actualizar tus datos y consultar las vacantes que las empresas e instituciones ofrecen.
+                      </p>
+                      <p class="card-text">
+                        La lista de vacantes activas la puedes consultar en el SITO ingresando con tu matrícula y contraseña en el módulo Bolsa de Trabajo / Vacantes / Agregar y/o consultar Vacantes.
+                      </p>
+                      <p class="card-text">
+                        Nota: este servicio es exclusivo para personas egresadas de la Universidad Tecnológica de León, si estás interesado/a en laborar en la Institución consulta nuestras vacantes dando click AQUÍ
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="card" style="background-color: #f6f7fa">
+              <div class="card-header">
+                <h5>Seguimiento de Egresados/as</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Es necesario que la información del SITO esté actualizada para
+                  que sigas estando vigente en la Bolsa de Trabajo, de esta
+                  manera podrás visualizar las vacantes y tener acceso a ferias
+                  de empleo y reclutamientos.
+                </p>
+                <p class="card-text">
+                  Para actualizar tu información es necesario ingresar al SITO
+                  en Egresados / Seguimiento de Egresados/as / Información y
+                  Encuestas de Egreso / DGA (Datos Generales del Alumnado y
+                  actualiza teléfono celular, correo electrónico, estado civil,
+                  domicilio, teléfono de casa o recados y referencias). La
+                  información que proporciones es exclusiva para el Departamento
+                  de Seguimiento de Egresados/as.
+                </p>
+                <p class="card-text">
+                  La información que proporciones es exclusiva para el
+                  Departamento de Seguimiento de Egresados/as.
+                </p>
+              </div>
+            </div>
+            <div class="container mt-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      src="assets/egresados_seguimiento.jpg"
+                      style="height: 280px; width: 400px"
+                      class="card-img"
+                      alt="Imagen de la tarjeta"
+                    />
+                  </div>
+                  <div class="col-md-8" style="background-color: #f6f7fa">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Contáctanos</h5>
+                        
+                <p class="card-text">
+                  Diana Esmeralda Vázquez Álvarez -
+                  <a href="">dvazquez@utleon.edu.mx</a>
+                </p>
+                <p class="card-text">
+                  Fátima Juárez Granados -
+                  <a href="">majuarez@utleon.edu.mx </a>
+                </p>
+                <p class="card-text">Tel: 477 710 00 20 Ext. 421, 424 y 428</p>
+              </div>
+            </div>
+            <br />
+          </article>
+
+          <!--Tab3-->
+          <article id="tab3">
+            <div class="card">
+              <div class="card-header"><b style="font-size: 20px;">Emprendimiento
+                Incubación de proyectos</b></div>
+              <div class="card-body">
+                <p style="color: gray; font-weight: bold;">¿Sueñas con tener tu propia empresa?
+                  Acércate a nosotros.
+                  ¡Te ayudamos a desarrollar tu idea de negocio!</p>
+                <p>Planea, desarrolla y estructura tu modelo de negocio para asegurar el éxito de tu emprendimiento.</p>
+                <p>El Centro Incubador de Empresas (CIEM) de la UTL es la entidad encargada de fomentar una cultura de emprendimiento e innovación para la creación de nuevas empresas a través de la incubación de negocios, ideas y proyectos, generados entre la comunidad universitaria y la sociedad en general.</p>
+                <p>Somos una Incubadora reconocida e integrada a la Red de Incubadoras del Subsistema de Universidades Tecnológicas (RISUT) y que forma parte de la Red Estatal de Incubadoras de Guanajuato.</p>
+              </div>
+            </div>
+            <br />
+<div class="row">
+<button class="btn btn-secondary btn-lg" style="margin-left: 190px;">A quién va dirigido</button>
+<button class="btn btn-secondary btn-lg" style="margin-left: 10px;">Casos de éxito</button>
+<button class="btn btn-secondary btn-lg" style="margin-left: 10px;">Requisitos para incubar</button>
+</div>
+<br>
+<div class="card">
+   <hr style="color: #009379; font-weight: bolder;   background-color: #009379;height: 5px;">
+   <div class="card-body">
+    <p style="margin-left: 10px; color: gray; font-size: 20px;">Consigue lanzar tu empresa al mercado asesorado por mentores especialistas.</p>
+    <a style="margin-left: 10x; color: #009379; font-size: 25px;">Regístrate</a>
+   </div>
+   </div>
+            <br />
+            
+<div class="card">
+  <hr style="color: #009379; font-weight: bolder;   background-color: #009379;height: 5px;">
+  <div class="card-body">
+   <p style="margin-left: 10px; color: gray; font-size: 20px;">Fondos Guanajuato tiene financiamientos para tí, consulta las reglas de operación</p>
+   <a style="margin-left: 10x; color: #009379; font-size: 25px;">Ver reglas</a>
+  </div>
+  </div>
+<br>
+
+<div class="card">
+  <hr style="color: #009379; font-weight: bolder;   background-color: #009379;height: 5px;">
+  <div class="card-body">
+   <p style="margin-left: 10px; color: gray; font-size: 20px;">IdeaGto y el Valle de la Mentefactura tienen programas del impulso que llevan tus ideas, proyectos y negocios al siguiente nivel, consulta las reglas de operación</p>
+   <a style="margin-left: 10x; color: #009379; font-size: 25px;">Ver reglas</a>
+  </div>
+  </div>
+  <br>
+  
+  <div class="container mt-4">
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img
+            src="assets/egr.png"
+            style="height: 230px; width: 240px"
+            class="card-img"
+            alt="Imagen de la tarjeta"
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">
+              Contáctanos
+            </h5>
+            <p style="margin-left: 10px; color: gray; font-size: 20px;">Centro Incubador de Empresas (CIEM)</p>
+            <div class="col-12 row">
+
+              <p class="card-text col-6" style="font-size: small">
+                <b> Campus Central y Campus II</b>
+                <br>
+Lcda. Araceli Hernández Pérez <br>
+Tel. (477) 710 0020 <br>
+Ext. 431, 420 <br>
+Edificio del Centro de Información, 1er Nivel <br>
+Correo: ciem@utleon.edu.mx <br>
+Lunes a viernes de 8:30 a 16:30 hrs. <br>
+              </p>
+              <p class="card-text col-6" style="font-size: small">
+                 <b>Unidad Académica del Sureste</b>
+                 <br>
+Lcdo. Jonathan Hernández Ávila
+<br>
+Tel: (417) 155 0600 <br>
+Ext. 642 <br>
+Edificio de biblioteca <br>
+Correo: jhavila@utleon.edu.mx <br>
+Lunes a viernes de 8:00 a 16:00 hrs <br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br />
+
+  <br />
+          </article>
+
+          <!--Tab4-->
+          <article id="tab4">
+               
+            
+            <div class="card">
+              <b>
+                <div
+                  class="card-header"
+                  style="
+                    font-size: 26px;
+                    background-color: #0b2e78;
+                    color: #fff;
+                  "
+                >
+                  Educación Continua
+                </div></b
+              >
+              <div class="card-body" style="background-color: #f6f7fa">
+                <br />
+                <img
+                  src="assets/educacion.webp"
+                  style="
+                    width: 350px;
+                    height: 250px;
+                    margin-left: 200px;
+                    margin-bottom: 10px;
+                  "
+                  class="card-img"
+                  alt="Imagen de la tarjeta"
+                />
+                <br>
+                <small style="font-weight: bold"
+                >Objetivo
+              </small>
+                <p class="card-text">
+                  Ofrecer servicios de capacitación en diferentes modalidades como cursos, talleres y diplomados, desarrollados en colaboración con docentes de las diferentes direcciones académicas, dirigidos tanto a egresados(as) y demás integrantes de la Universidad, así como al público en general, con el propósito de apoyarles en su actualización profesional.
+                </p>
+              </div>
+            </div>
+<br>
+<h3>Proximos Cursos Septiembre - Diciembre 2022</h3>
+<hr style="color: #009379; font-weight: bolder;   background-color: #009379;height: 5px;">
+<img
+src="assets/curso.png"
+style="
+  width: 250px;
+  height: 350px;
+  margin-left: 260px;
+  margin-bottom: 10px;
+"
+class="card-img"
+alt="Imagen de la tarjeta"
+/>
+<br>
+
+<div class="card">
+  <div class="card-header">Contáctanos</div>
+  <div class="card-body">
+    <p>José Francisco Hernández García -</p><a href="#">
+      jhedz@utleon.edu.mx</a
+    >
+    <br />
+    <p>Luis Efrén Ramos de Anda -</p><a href="#">lramos@utleon.edu.mx </a><br>
+    <p>José de Jesús Elías Balderas - j</p><a href="#"> jelias@utleon.edu.mx</a>
+    <br />
+    <p>Tel: 477 710 00 20 Ext. 418, 425 y 430</p>
+  </div>
+</div>
+          </article>
+          <article id="tab5">
+            <h3>Contáctanos</h3>
+            <hr style="color: black" />
+            
+            <div class="card" style="background-color: #f7f7f7;">
+              <div class="card-body">
+                <br>
+                <img src="assets/contactanos.png" style="margin-left: 200px;" alt="">
+                <hr>
+                <br>
+<div class="row">
+<button class="btn btn-info btn-lg" style="margin-left: 220px;">Directorio</button>
+<button class="btn btn-info btn-lg" style="margin-left: 10px;">Oficina Virtual Escolares</button>
+<button class="btn btn-info btn-lg" style="margin-left: 10px;">Buzón Instituacional</button>
+<br>
+</div>
+              </div>
+            </div>
+            <br />
+<br>
+            <br />
+          </article>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <!--Pie de página-->
+    <footer
+      style="background-color: #000c34; text-align: center; margin-top: 10px"
+    >
+      <!--Logos de pie de página-->
+      <img
+        src="assets/logos.jpg"
+        style="border-color: gray; border-style: outset; width: 1075px"
+        alt=""
+      />
+      <div style="background-color: #009379">
+        <br />
+      </div>
+      <br />
+      <div class="texto-footer" style="color: #fff; font-size: smaller">
+        <p>Blvd. Universidad Tecnológica #225 Col. San Carlos</p>
+      </div>
+      <div class="texto-footer1" style="color: #fff; font-size: smaller">
+        <p>CP. 37670 León, Gto. Mex. l Tel (477) 7 10 00 20</p>
+      </div>
+      <div class="texto-footer2" style="color: #009379; font-size: smaller">
+        <p [href]="url">Aviso de Privacidad Simplificado</p>
+        <p style="color: #fff; padding: 5px">|</p>
+        <p [href]="url">Aviso de Privacidad Integral</p>
+      </div>
+    </footer>
+    <!-- jQuery,Popper.js y Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--JS-->
+    <script src="JS/index.js"></script>
+  </body>
+</html>
