@@ -1,9 +1,8 @@
-/* Style the tab */
-
 .wrap {
-    width: 500px;
-    max-width: 90%;
-    border: #b5b5b5 2px solid;
+    width: 1250px;
+    max-width: 100%;
+    border-color: #b5b5b5;
+    border-style: outset;
     border-radius: 30px 30px 0px 0px;
 }
 
@@ -111,46 +110,11 @@ ul.tabs li a .tab-text {
     background-color: #555;
 }
 
-/*Se dejo de usar este codigo*/
 
-/*
-.texto-footer {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 430px;
-}
-
-.texto-footer1 {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 440px;
-}
-
-.texto-footer2 {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 390px;
-}
-*/
-
-
-/* Estilos para el calendario */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-}
-
-.calendar {
-    width: 300px;
-    margin: 0 auto;
-    border: 1px solid #ccc;
-    padding: 10px;
+    margin: 20px;
 }
 
 .header {
@@ -160,43 +124,7 @@ body {
     margin-bottom: 10px;
 }
 
-table {
+footer {
+    bottom: 0;
     width: 100%;
-}
-
-table th,
-table td {
-    padding: 5px;
-    text-align: center;
-}
-
-#prevMonth,
-#nextMonth {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-#currentMonth {
-    font-size: 1.5rem;
-}
-
-
-table {
-    border-collapse: collapse;
-    border-radius: 5px;
-    width: 100%;
-}
-
-td,
-th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
 }

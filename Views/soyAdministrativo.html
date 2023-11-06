@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/administrativo.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!--Icon-->
+    <link rel="icon" href="../assets/UTL.png" type="image/png" />
+    <title>Soy Administrativo</title>
+  </head>
+  <body>
+    <!--Barra de navegación-->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary"
+      style="
+        height: 90px;
+        background: linear-gradient(120deg, #000c34 19.2%, #009379 85.8%);
+      "
+    >
+      <div class="container-fluid" style="margin-top: 10px">
+        <a class="navbar-brand" href="../index.html"
+          ><img
+            src="../assets/UTL.png"
+            style="width: 60px; height: 60px; margin-right: 5px"
+            alt=""
+          />
+        </a>
+        <div
+          style="
+            display: inline-block;
+            color: white;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            text-align: left;
+            font-size: large;
+          "
+        >
+          Universidad Tecnológica de León
+          <p
+            style="
+              color: white;
+              font-size: 14px;
+              font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+              text-align: left;
+            "
+          >
+            Ser, Saber, Hacer
+          </p>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="width: 180px">
+              <p
+                id="fecha-hora"
+                style="color: white; font-size: 12px; margin-left: 30px"
+              ></p>
+            </li>
+          </ul>
+          <button
+            id="menu-toggle"
+            class="btn"
+            type="button"
+            style="
+              border-style: none;
+              margin-left: 480px;
+              background-color: transparent;
+            "
+          >
+            <img
+              src="../assets/menu-icon1.png"
+              style="color: white; width: 40px; height: 40px"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
+    </nav>
+    <br />
+
+    <!--Barra lateral-->
+    <div id="sidebar" class="sidebar">
+      <button
+        id="close-btn"
+        class="close-btn btn-close-white"
+        style="margin-left: 10px; border-radius: 5px"
+      >
+        X
+      </button>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="somosUTL.html">Somos UTL</a></li>
+        <li><a href="soyAspirante.html">Soy Aspirante</a></li>
+        <li><a href="soyEstudiante.html">Soy Estudiante</a></li>
+        <li><a href="soyDocente.html">Soy Docente</a></li>
+        <li>
+          <a href="soyAdministrativo.html">Soy Administrativo/a</a>
+        </li>
+        <li><a href="soyEmpresario.html">Soy Empresario/a</a></li>
+        <li><a href="../soyEgresado.html">Soy Egresado/a</a></li>
+      </ul>
+    </div>
+
+    <!--Contenido de la pagina-->
+
+    <br />
+    <h1 style="margin-left: 20px">Soy Administrativo</h1>
+    <hr
+      style="
+        color: #000000;
+        font-weight: bold;
+        font-size: large;
+        margin-left: 20px;
+        margin-right: 20px;
+      "
+    />
+    <br />
+    <!--Botones-->
+    <div style="margin-left: 35px">
+      <button
+        class="btn btn-primary btn-sm"
+        style="margin-bottom: 6px; margin-top: 2px; width: 245px"
+      >
+        SITO
+      </button>
+      <button
+        class="btn btn-primary btn-sm"
+        style="margin-bottom: 5px; width: 245px"
+      >
+        SGI
+      </button>
+      <button
+        class="btn btn-primary btn-sm"
+        style="margin-bottom: 5px; width: 245px"
+      >
+        CORREO INSTITUCIONAL
+      </button>
+      <button
+        class="btn btn-primary btn-sm"
+        style="margin-bottom: 5px; width: 245px"
+      >
+        CALENDARIO ESCOLAR
+      </button>
+      <button
+        class="btn btn-primary btn-sm"
+        style="margin-bottom: 5px; width: 245px"
+      >
+        DIFUSIÓN E IMAGEN INSTITUCIONAL
+      </button>
+      <button
+        class="btn btn-primary btn-sm"
+        style="margin-bottom: 5px; width: 245px"
+      >
+        MESA DE AYUDA DSI
+      </button>
+      <button
+        class="btn btn-primary btn-sm"
+        style="margin-bottom: 5px; width: 245px"
+      >
+        NORMATIVAS
+      </button>
+    </div>
+    <br />
+
+    <!--Tab principal-->
+    <div class="Container" style="margin-left: 50px">
+      <div class="wrap">
+        <ul class="tabs" style="border-radius: 30px 30px 0 0">
+          <li>
+            <a href="#tab1"
+              ><span class="fa fa-home" style="font-size: smaller"></span
+              ><span class="tab-text" style="font-size: smaller"
+                >Nuestra Rectora</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#tab2"
+              ><span
+                ><i
+                  class="fa-solid fa-users"
+                  style="font-size: smaller"
+                ></i></span
+              ><span class="tab-text" style="font-size: smaller"
+                >Desarrollo Humano y Organizacional</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#tab3"
+              ><span
+                class="fa-solid fa-shield-halved"
+                style="font-size: smaller"
+              ></span
+              ><span class="tab-text" style="font-size: smaller"
+                >Seguridad Institucional</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#tab4"
+              ><span style="font-size: smaller"></span
+              ><span class="tab-text" style="font-size: smaller"
+                >Transparencia</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#tab5">
+              <span class="fa-solid fa-heart-pulse"></span>
+              <span class="tab-text" style="font-size: smaller">
+                Salud Integral
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#tab6">
+              <span class="fa-solid fa-chalkboard-user"></span>
+              <span class="tab-text" style="font-size: smaller">
+                Organos Colegiales
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#tab7">
+              <span class="fa-solid fa-address-book"></span>
+              <span class="tab-text" style="font-size: smaller">
+                Contactos
+              </span>
+            </a>
+          </li>
+        </ul>
+
+        <!--Tab1-->
+        <div class="secciones" style="overflow-y: scroll; margin-bottom: 5px">
+          <article id="tab1">
+            <div class="card">
+              <b>
+                <div
+                  class="card-header"
+                  style="
+                    font-size: 26px;
+                    background-color: #0b2e78;
+                    color: #fff;
+                  "
+                >
+                  Mensaje de Nuestra Rectora
+                </div></b
+              >
+              <div class="card-body" style="background-color: #f6f7fa">
+                <br />
+                <img
+                  src="../assets/rectora.jpg"
+                  style="
+                    width: 250px;
+                    height: 350px;
+                    margin-left: 200px;
+                    margin-bottom: 10px;
+                  "
+                  class="card-img"
+                  alt="Imagen de la tarjeta"
+                />
+                <br />
+                <p class="card-text">
+                  Es un gusto muy especial dirigirme a todas y todos los
+                  integrantes de la Comunidad UTL: estudiantado, personal
+                  docente y administrativo, y demás plantilla actoral de nuestro
+                  entorno universitario. Desde marzo ya estamos de regreso a
+                  casa. Y en este deseo de normalizar nuestra vida
+                  universitaria, hemos vivenciado un proceso necesario de
+                  reencuentro, de reconocimiento, para compensar esos meses de
+                  confinamiento que afectaron nuestra forma de relacionarnos
+                  personal y colectivamente.
+                </p>
+                <p class="card-text">
+                  Pero si algo nos define, es que somos una institución
+                  tecnológicamente humana, en innovación y adaptación constante.
+                  Y en esta nueva realidad, que nos enfocamos en dar prioridad a
+                  la salud, atendiendo en todo momento a las medidas sanitarias
+                  para mantener a raya todo contagio.
+                </p>
+                <p class="card-text">
+                  Además, es necesario, como dice nuestro Gobernador Diego
+                  Sinhué Rodríguez, reinventarnos para ser mejores, esto es,
+                  crear nuevas formas de realizar el proceso formativo,
+                  académico, administrativo para que nuestra UTL siga siendo
+                  considerada un bastión importante del ecosistema educativo
+                  guanajuatense.
+                </p>
+                <p class="card-text">
+                  Como bien lo dice nuestro lema “Somos Leones, Somos Leonas”,
+                  les invito a construir entre todos una “guarida segura” donde
+                  prevalezca un ambiente de colaboración y convivencia, donde
+                  nos sintamos a gusto en “nuestra guarida”, promoviendo una
+                  cultura de paz y de respeto a nuestros derechos humanos
+                  fundamentales. Acorde a los nuevos tiempos, mostremos a la
+                  sociedad que la UTL es íntegra, inclusiva y sostenible.
+                </p>
+                <small style="font-weight: bold"
+                  >Yoloxóchitl Bustamante Díez
+                </small>
+                <br />
+                <small>Encargada del Despacho de Rectoría</small>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab2-->
+          <article id="tab2">
+            <div class="container mt-4">
+              <div class="card">
+                <div class="card-header">
+                    <h3>Desarrollo Humano y Organizacional</h3>
+                </div>
+                <div class="card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    nam non minima aspernatur culpa impedit. Dignissimos
+                    deserunt vel ratione delectus voluptatem commodi repellat
+                    nobis tenetur consectetur sunt? Voluptate, nostrum fugit?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptatem dolorum, et sed esse quas autem ipsum quidem
+                    magni minima harum repellat cum. Excepturi ea saepe beatae
+                    ab harum nobis rem.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laborum explicabo cum incidunt, tempore fugiat quidem
+                    repellat sapiente corporis pariatur. Explicabo numquam omnis
+                    placeat, odit unde assumenda aperiam dolorum quaerat optio.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Aliquid corrupti exercitationem tempore vel architecto
+                    quaerat officiis quisquam. Reprehenderit, architecto
+                    dignissimos excepturi magni natus nemo aperiam. Assumenda ea
+                    expedita tempore nemo. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Voluptates rem placeat
+                    perferendis minus adipisci aliquid sapiente, eius autem
+                    natus, officiis debitis accusamus dicta fugiat eos deleniti
+                    voluptatum ex consequuntur assumenda!
+                  </p>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab3-->
+          <article id="tab3">
+            <div class="container mt-4">
+              <div class="card">
+                <div class="card-header">
+                  <h3>Protocolos de Seguridad</h3>
+                </div>
+                <div class="card-body">
+                  <p>
+                    EDentro de las siguientes líneas estratégicas:
+                    “Simplificación y mejora continua de procesos”,
+                    “consolidación de la infraestructura de la Universidad” y
+                    “desarrollo de la responsabilidad social universitaria”, es
+                    que tiene origen la inquietud por fortalecer la cultura de
+                    seguridad y la cultura de la protección civil para fomentar
+                    la prevención ante contingencias y/o desastres naturales que
+                    pueden causar un daño a la comunidad universitaria.
+                  </p>
+                  <p>
+                    Pero no es sino hasta la creación del Espacio Común de
+                    Educación Superior Tecnológica (ECEST) en el 2009, que se
+                    comienzan a realizar una serie de trabajos orientados a
+                    impulsar el mejoramiento general de los servicios educativos
+                    que brindan las instituciones de educación superior (IES) de
+                    los subsistemas de Institutos Tecnológicos, Universidades
+                    Politécnicas y Universidades Tecnológicas. En particular y,
+                    dentro de este marco, en 2010 se conformó la Comisión de
+                    Cultura, Prevención y Seguridad con objeto de atender la
+                    demanda de espacios educativos seguros y en los que se viva
+                    una cultura de prevención y seguridad. No obstante esto no
+                    sólo se consolida en el ECEST, sino también en gran medida
+                    en lo que la certificación en ISO 14001:2004 nos marca como
+                    un requisito indispensable no nada más para salvaguardar la
+                    vida de los miembros de la comunidad universitaria, sino
+                    también para saber qué hacer en caso de una emergencia
+                    ambiental.
+                  </p>
+                  <p>
+                    La tarea de prevenir y reducir las consecuencias de los
+                    desastres sigue descansando, en gran medida, en las
+                    instituciones especializadas. No obstante, es requisito
+                    indispensable lograr una sensibilización y cultura de
+                    seguridad institucional además de contar con un Plan Interno
+                    de Protección Civil dentro de la cual se incluyan brigadas.
+                  </p>
+                  <p>
+                    Las actividades que los brigadistas realizan, son tan
+                    importantes como el apoyo que deben de recibir por las
+                    autoridades del edificio que ocupan, y estos últimos, además
+                    de ser los principales responsables en la prevención de
+                    riesgos también deben promover y apoyar entre los
+                    brigadistas y la población, la cultura de Protección Civil.
+                  </p>
+                  <p>
+                    El saber qué hacer en caso de desastres es crucial para el
+                    resguardar nuestra vida y patrimonio, y para ofrecer
+                    seguridad a los miembros de la comunidad universitaria.
+                  </p>
+                  <p>
+                    El Plan Interno de Protección Civil que pretendemos
+                    implementar nos hará pasar de una estrategia reactiva a un
+                    sistema capaz de anticipar desastres y de atenuar sus
+                    consecuencias. En la medida en que conozcamos el origen, la
+                    formación, la propagación y los efectos de los agentes
+                    destructivos, estaremos mejor preparados para hacerles
+                    frente.
+                  </p>
+                  <div class="row">
+                    <div class="" style="color: rgb(102, 8, 86)">
+                      <h3>Brigadas Internas</h3>
+                    </div>
+                    <span class="LineaAdministrativo"></span>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-11 col">
+                      <a
+                        href="../../public_html/seguridad-institucional/protocolos-de-seguridad/documentos/proteccion_civil.pdf"
+                        >Conoce el programa Interno de Protección Civil</a
+                      >
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="" style="color: rgb(102, 8, 86)">
+                      <h3>Protocolos de Seguridad</h3>
+                    </div>
+                    <span class="LineaAdministrativo"></span>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-11 col">
+                      <a
+                        href="../../public_html/seguridad-institucional/protocolos-de-seguridad/documentos/procedimiento_de_acceso_a_vehiculos_seguridad.doc"
+                        target="_blank"
+                        >Procedimiento de acceso a vehículos seguridad</a
+                      >
+                      <br />
+                      <a
+                        href="../../public_html/seguridad-institucional/protocolos-de-seguridad/documentos/procedimiento_amenaza_de_bomba.doc"
+                        target="_blank"
+                        >Procedimiento amenaza de bomba</a
+                      >
+                      <br />
+                      <a
+                        href="../../public_html/seguridad-institucional/protocolos-de-seguridad/documentos/procedimiento_de_incendio.doc"
+                        target="_blank"
+                        >Procedimiento de incendio</a
+                      >
+                      <br />
+                      <a
+                        href="../../public_html/seguridad-institucional/protocolos-de-seguridad/documentos/procedimiento_desastres_naturales.doc"
+                        target="_blank"
+                        >Procedimiento desastres naturales</a
+                      >
+                      <br />
+                      <a
+                        href="../../public_html/seguridad-institucional/protocolos-de-seguridad/documentos/procedimiento_de_activacion_de_alarmas.doc"
+                        target="_blank"
+                        >Procedimiento de activación de alarmas</a
+                      >
+                      <br />
+                      <a
+                        href="../../public_html/seguridad-institucional/protocolos-de-seguridad/documentos/procedimiento_de_llamadas_de_extorsion.doc"
+                        target="_blank"
+                        >Procedimiento de llamadas de extorsión</a
+                      >
+                      <br />
+                      <a
+                        href="../../public_html/seguridad-institucional/protocolos-de-seguridad/documentos/procedimiento_disturbio_e_intervencion.doc"
+                        target="_blank"
+                        >Procedimiento disturbio e intervención</a
+                      >
+                      <br />
+                      <a
+                        href="../../public_html/seguridad-institucional/protocolos-de-seguridad/documentos/procedimiento_de_emergencia_uipc.doc"
+                        target="_blank"
+                        >Procedimiento de emergencia UIPC</a
+                      >
+                      <br />
+                      <a
+                        href="../../public_html/seguridad-institucional/protocolos-de-seguridad/documentos/procedimiento_de_seguridad_acceso_a_personas.doc"
+                        target="_blank"
+                        >Procedimiento de seguridad acceso a personas</a
+                      >
+                      <br />
+                      <a
+                        href="../../public_html/seguridad-institucional/protocolos-de-seguridad/documentos/procedimiento_de_llamadas_de_extorsion.doc"
+                        target="_blank"
+                        >Procedimiento de atención a llamadas de extorsión</a
+                      >
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab4-->
+          <article id="tab4">
+            <div class="container mt-4">
+              <div class="card">
+                <div class="card-header">
+                  <h3>Transparencia</h3>
+                </div>
+                <div class="card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    nam non minima aspernatur culpa impedit. Dignissimos
+                    deserunt vel ratione delectus voluptatem commodi repellat
+                    nobis tenetur consectetur sunt? Voluptate, nostrum fugit?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptatem dolorum, et sed esse quas autem ipsum quidem
+                    magni minima harum repellat cum. Excepturi ea saepe beatae
+                    ab harum nobis rem.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laborum explicabo cum incidunt, tempore fugiat quidem
+                    repellat sapiente corporis pariatur. Explicabo numquam omnis
+                    placeat, odit unde assumenda aperiam dolorum quaerat optio.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Aliquid corrupti exercitationem tempore vel architecto
+                    quaerat officiis quisquam. Reprehenderit, architecto
+                    dignissimos excepturi magni natus nemo aperiam. Assumenda ea
+                    expedita tempore nemo. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Voluptates rem placeat
+                    perferendis minus adipisci aliquid sapiente, eius autem
+                    natus, officiis debitis accusamus dicta fugiat eos deleniti
+                    voluptatum ex consequuntur assumenda!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab5-->
+          <article id="tab5">
+            <div class="container mt-4">
+              <div class="card">
+                <div class="card-header">
+                  <h3>Salud Integral</h3>
+                </div>
+                <div class="card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    nam non minima aspernatur culpa impedit. Dignissimos
+                    deserunt vel ratione delectus voluptatem commodi repellat
+                    nobis tenetur consectetur sunt? Voluptate, nostrum fugit?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptatem dolorum, et sed esse quas autem ipsum quidem
+                    magni minima harum repellat cum. Excepturi ea saepe beatae
+                    ab harum nobis rem.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laborum explicabo cum incidunt, tempore fugiat quidem
+                    repellat sapiente corporis pariatur. Explicabo numquam omnis
+                    placeat, odit unde assumenda aperiam dolorum quaerat optio.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Aliquid corrupti exercitationem tempore vel architecto
+                    quaerat officiis quisquam. Reprehenderit, architecto
+                    dignissimos excepturi magni natus nemo aperiam. Assumenda ea
+                    expedita tempore nemo. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Voluptates rem placeat
+                    perferendis minus adipisci aliquid sapiente, eius autem
+                    natus, officiis debitis accusamus dicta fugiat eos deleniti
+                    voluptatum ex consequuntur assumenda!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab6-->
+          <article id="tab6">
+            <div class="container mt-4">
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <br />
+                    </div>
+                    <div class="card-body">
+                      <h3>
+                        Comité Ética y Prevención de Conflictos de Interés
+                      </h3>
+                      <br />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam minima nulla officia asperiores temporibus omnis?
+                      Nihil tempora unde esse nesciunt quas non harum facilis
+                      commodi repudiandae saepe. Dolor, eos quidem.
+                      <br />
+                      <button type="button" class="btn btn-primary">Ir</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <br />
+                    </div>
+                    <div class="card-body">
+                      <h3>Comité de Igualdad Laboral y No Discriminación</h3>
+                      <br />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam minima nulla officia asperiores temporibus omnis?
+                      Nihil tempora unde esse nesciunt quas non harum facilis
+                      commodi repudiandae saepe. Dolor, eos quidem.
+                      <br />
+                      <button type="button" class="btn btn-primary">Ir</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <br />
+                    </div>
+                    <div class="card-body">
+                      <h3>
+                        Sub Comité de Atención a Presuntos Casos de Violencia,
+                        Acoso y Hostigamiento Sexual
+                      </h3>
+                      <br />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam minima nulla officia asperiores temporibus omnis?
+                      Nihil tempora unde esse nesciunt quas non harum facilis
+                      commodi repudiandae saepe. Dolor, eos quidem.
+                      <br />
+                      <button type="button" class="btn btn-primary">Ir</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab7-->
+          <article id="tab7">
+            <div class="container mt-4">
+              <div class="card">
+                <div class="card-header">
+                  <h3>Contactos</h3>
+                </div>
+                <div class="card-body">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Ext.</th>
+                        <th>Nombre</th>
+                        <th>Puesto</th>
+                        <th>Depto.</th>
+                        <th>Correo Electrónico</th>
+                        <th>Servicio</th>
+                        <th>Edificio</th>
+                        <th>Planta</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>128</td>
+                        <td>Liliana Estrada Afanador</td>
+                        <td>Jefatura de Servicios Escolares</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>lestrada@utleon.edu.mx</td>
+                        <td>Servicios Escolares</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>202</td>
+                        <td>Laura Berenice Rodríguez Rangel</td>
+                        <td>Subdirectora de Servicios Estudiantiles</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>lrodriguezr@utleon.edu.mx</td>
+                        <td>Servicios Escolares</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>206</td>
+                        <td>Alma Delia Salazar Arteaga</td>
+                        <td>Titulación</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>aarteaga@utleon.edu.mx</td>
+                        <td>Titulación</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>209</td>
+                        <td>María de Lourdes Barrios</td>
+                        <td>Coordinadora</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>mbarrios@utleon.edu.mx</td>
+                        <td>Planes y Programas de Estudio</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>210</td>
+                        <td>José Omar Ramírez Barajas</td>
+                        <td>Control de Planeación Escolar</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>jramirezb@utleon.edu.mx</td>
+                        <td>Bajas</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>296</td>
+                        <td>Luis Alejandro Gonzalez Castro</td>
+                        <td>Asesor Estudiantil</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>lgonzalezc@utleon.edu.mx</td>
+                        <td>Asesor de Escolares</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>297</td>
+                        <td>Brenda Isabel Tellez Reyes</td>
+                        <td>Asesor de Atención a Alumnos</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>btellez@utleon.edu.mx</td>
+                        <td>Asesor de Escolares</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>298</td>
+                        <td>Janet Alejandra Rocha Gómez</td>
+                        <td>Secretaria de jefe de departamento</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>jarocha@utleon.edu.mx</td>
+                        <td>Departamento</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>422</td>
+                        <td>Archivo Servicios Estudiantiles</td>
+                        <td>Secretaria de jefe de departamento</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td></td>
+                        <td>Departamento</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <br />
+              <div class="card">
+                <div class="card-header">
+                  <h3>
+                    BUZÓN DE ATENCIÓN A PRESUNTOS CASOS DE VIOLENCIA LABORAL,
+                    ACOSO Y HOSTIGAMIENTO SEXUAL
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <p>
+                    Te invitamos a presentar tu queja si sientes que eres
+                    víctima de:
+                  </p>
+
+                  <ul>
+                    <li>
+                      <strong>Violencia laboral y docente:</strong> Se ejerce
+                      por las personas que tienen un vínculo laboral, docente o
+                      análogo con la víctima, independientemente de la relación
+                      jerárquica, consistente en un acto o una omisión en abuso
+                      de poder que daña la autoestima, salud, integridad,
+                      libertad y seguridad de la víctima, e impide su desarrollo
+                      y atenta contra la igualdad.
+                    </li>
+                    <li>
+                      <strong>Acoso sexual:</strong> Es una forma de violencia
+                      en la que, si bien no existe la subordinación, hay un
+                      ejercicio abusivo de poder que conlleva a un estado de
+                      indefensión y de riesgo para la víctima,
+                      independientemente de que se realice en uno o varios
+                      eventos.
+                    </li>
+                    <li>
+                      <strong>Hostigamiento sexual:</strong> El hostigamiento
+                      sexual es el ejercicio del poder, en una relación de
+                      subordinación real de la víctima frente al agresor en los
+                      ámbitos laboral y/o escolar. Se expresa en conductas
+                      verbales, físicas o ambas, relacionadas con la sexualidad
+                      de connotación lasciva.
+                    </li>
+                    <li>
+                      <strong
+                        >Hostigamiento relacionado con un
+                        premio/castigo:</strong
+                      >
+                      Solicitar favores sexuales a cambio de beneficios en el
+                      trabajo, ascensos o aumentos de salario. Su negación
+                      provoca represalias o despidos. Suele producirse entre
+                      quienes realizan labores de supervisión y personal
+                      subordinado.
+                    </li>
+                    <li>
+                      <strong>Hostigamiento laboral:</strong> Insultos y
+                      hostilidad de colegas de trabajo o de personal supervisor
+                      a quien se ha rechazado. Estas conductas resultan
+                      inaceptables e intolerantes en un lugar de trabajo.
+                    </li>
+                    <li>
+                      <strong>Mobbing o acoso laboral:</strong> Conocido con el
+                      término anglosajón mobbing consiste en acciones de
+                      intimidación moral, social, psicológica de forma
+                      sistemática y persistente que atentan contra la dignidad o
+                      la integridad de las personas en sus lugares de trabajo.
+                      Es una forma muy frecuente de violencia en el ámbito
+                      laboral y puede ser ejercida por personas de jerarquías
+                      superiores hacia personas con un rango menor, entre
+                      iguales, de hombres a mujeres o viceversa; entre personas
+                      del mismo sexo; entre personal del mismo nivel jerárquico
+                      o hacia su jefa o jefe. En cualquier caso, son prácticas
+                      perjudiciales que es necesario erradicar de los ambientes
+                      laborales.
+                    </li>
+                    <li>
+                      <strong>Discriminación:</strong> Toda distinción,
+                      exclusión, restricción o preferencia que, por acción u
+                      omisión, con intención o sin ella, no sea objetiva,
+                      racional ni proporcional y tenga por objeto o resultado
+                      obstaculizar, restringir, impedir, menoscabar o anular el
+                      reconocimiento, goce o ejercicio de los derechos humanos y
+                      libertades, cuando se base en uno o más de los siguientes
+                      motivos: el origen étnico o nacional, el color de piel, la
+                      cultura, el sexo, el género, la edad, las discapacidades,
+                      la condición social, económica, de salud o jurídica, la
+                      religión, la apariencia física, las características
+                      genéticas, la situación migratoria, el embarazo, la
+                      lengua, las opiniones, las preferencias sexuales, la
+                      identidad o filiación política, el estado civil, la
+                      situación familiar, las responsabilidades familiares, el
+                      idioma, los antecedentes penales o cualquier otro motivo.
+                    </li>
+                    <li>
+                      También se entenderá como discriminación la homofobia,
+                      misoginia, cualquier manifestación de xenofobia,
+                      segregación racial, antisemitismo, así como la
+                      discriminación racial y otras formas conexas de
+                      intolerancia.
+                    </li>
+                    <li>
+                      <strong>Discriminación Laboral:</strong> No podrán
+                      establecerse condiciones que impliquen discriminación
+                      entre los trabajadores por motivo de origen étnico o
+                      nacional, género, edad, discapacidad, condición social,
+                      condiciones de salud, religión, condición migratoria,
+                      opiniones, preferencias sexuales, estado civil o cualquier
+                      otro que atente contra la dignidad humana.
+                    </li>
+                  </ul>
+                  <br />
+                  <p>La persona que presenta la queja deberá:</p>
+                  <ul>
+                    <li>
+                      Escribir datos reales y completos (nombre y correo
+                      electrónico) para poder dar un seguimiento puntual a su
+                      caso.
+                    </li>
+                    <li>El planteamiento de la queja sin ambigüedades.</li>
+                    <li>El contenido no debe ser con lenguaje impropio.</li>
+                  </ul>
+                  <p>
+                    El Comité de atención a presuntos casos de violencia, acoso
+                    y hostigamiento sexual deberá dar atención y manejar la
+                    información de la queja de manera confidencial.
+                  </p>
+                  <form>
+                    <div class="form-group">
+                      <label for="nombre">Nombre:</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nombre"
+                        placeholder="Nombre"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="motivo">Dirigido a:</label>
+                      <select class="form-control" id="motivo">
+                        <option>
+                          Comité para la atención de la violencia laboral y el
+                          hostigamiento y acoso sexual
+                        </option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="mensaje">Mensaje:</label>
+                      <textarea
+                        class="form-control"
+                        id="mensaje"
+                        rows="5"
+                        placeholder="Escribe tu mensaje"
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                      Enviar Correo
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <!--Pie de página-->
+    <footer style="background-color: #000c34; text-align: center">
+      <!--Logos de pie de página-->
+      <img
+        src="../assets/logos.jpg"
+        style="border: gray 1px solid; width: 1120px"
+        alt=""
+      />
+      <div style="background-color: #009379">
+        <br />
+      </div>
+      <br />
+      <div class="row-cols-1">
+        <div class="col-12" style="color: #fff; font-size: smaller">
+          <p>Blvd. Universidad Tecnológica #225 Col. San Carlos</p>
+        </div>
+        <div class="col-12" style="color: #fff; font-size: smaller">
+          <p>CP. 37670 León, Gto. Mex. l Tel (477) 7 10 00 20</p>
+        </div>
+        <div
+          class="col-12"
+          style="
+            color: #009379;
+            font-size: smaller;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+          "
+        >
+          <p [href]="url">Aviso de Privacidad Simplificado</p>
+          <p style="color: #fff; padding: 5px">|</p>
+          <p [href]="url">Aviso de Privacidad Integral</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="../JS/index.js"></script>
+  </body>
+</html>

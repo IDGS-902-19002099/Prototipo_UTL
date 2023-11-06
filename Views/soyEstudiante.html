@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/estudiante.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!--Icon-->
+    <link rel="icon" href="/assets/UTL.png" type="image/png" />
+    <title>Soy Estudiante</title>
+  </head>
+  <body>
+    <!--Barra de navegación-->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary"
+      style="
+        height: 90px;
+        background: linear-gradient(120deg, #000c34 19.2%, #009379 85.8%);
+      "
+    >
+      <div class="container-fluid" style="margin-top: 10px">
+        <a class="navbar-brand" href="../index.html"
+          ><img
+            src="../assets/UTL.png"
+            style="width: 60px; height: 60px; margin-right: 5px"
+            alt=""
+          />
+        </a>
+        <div
+          style="
+            display: inline-block;
+            color: white;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            text-align: left;
+            font-size: large;
+          "
+        >
+          Universidad Tecnológica de León
+          <p
+            style="
+              color: white;
+              font-size: 14px;
+              font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+              text-align: left;
+            "
+          >
+            Ser, Saber, Hacer
+          </p>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="width: 180px">
+              <p
+                id="fecha-hora"
+                style="color: white; font-size: 12px; margin-left: 30px"
+              ></p>
+            </li>
+          </ul>
+          <button
+            id="menu-toggle"
+            class="btn"
+            type="button"
+            style="
+              border-style: none;
+              margin-left: 480px;
+              background-color: transparent;
+            "
+          >
+            <img
+              src="../assets/menu-icon1.png"
+              style="color: white; width: 40px; height: 40px"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
+    </nav>
+    <br />
+
+    <!--Barra lateral-->
+    <div id="sidebar" class="sidebar">
+      <button
+        id="close-btn"
+        class="close-btn btn-close-white"
+        style="margin-left: 10px; border-radius: 5px"
+      >
+        X
+      </button>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="somosUTL.html">Somos UTL</a></li>
+        <li><a href="soyAspirante.html">Soy Aspirante</a></li>
+        <li><a href="soyEstudiante.html">Soy Estudiante</a></li>
+        <li><a href="soyDocente.html">Soy Docente</a></li>
+        <li>
+          <a href="soyAdministrativo.html">Soy Administrativo/a</a>
+        </li>
+        <li><a href="soyEmpresario.html">Soy Empresario/a</a></li>
+        <li><a href="../soyEgresado.html">Soy Egresado/a</a></li>
+      </ul>
+    </div>
+
+    <!--Contenido de la pagina-->
+
+    <br />
+    <h1 style="margin-left: 20px">Soy Estudiante</h1>
+    <hr
+      style="
+        color: #000000;
+        font-weight: bold;
+        font-size: large;
+        margin-left: 20px;
+        margin-right: 20px;
+      "
+    />
+    <br />
+    <!--Botones-->
+    <div style="margin-left: 35px">
+      <button
+        class="btn btn-primary btn-sm"
+        style="margin-bottom: 6px; margin-top: 2px; width: 245px"
+      >
+        SITO
+      </button>
+      <button
+        class="btn btn-primary btn-sm"
+        style="margin-bottom: 5px; width: 245px"
+      >
+        CALENDARIO ESCOLAR
+      </button>
+      <button
+        class="btn btn-primary btn-sm"
+        style="margin-bottom: 5px; width: 245px"
+      >
+        NORMATIVAS
+      </button>
+    </div>
+    <br />
+
+    <!--Tab principal-->
+    <div class="Container" style="margin-left: 50px">
+      <div class="wrap">
+        <ul class="tabs" style="border-radius: 30px 30px 0 0">
+          <li>
+            <a href="#tab1"
+              ><span class="fa fa-home" style="font-size: smaller"></span
+              ><span class="tab-text" style="font-size: smaller"
+                >Nuestra Rectora</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#tab2"
+              ><span
+                ><i
+                  class="fa-regular fa-file-lines"
+                  style="font-size: smaller"
+                ></i></span
+              ><span class="tab-text" style="font-size: smaller"
+                >Tramites escolares</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#tab3"
+              ><span
+                class="fa-solid fa-graduation-cap"
+                style="font-size: smaller"
+              ></span
+              ><span class="tab-text" style="font-size: smaller">Becas</span></a
+            >
+          </li>
+          <li>
+            <a href="#tab4">
+              <span style="font-size: smaller"></span>
+              <span class="tab-text" style="font-size: smaller">
+                Servicios Integrales para el alumnado
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#tab5">
+              <span class="fa-solid fa-briefcase"></span>
+              <span class="tab-text" style="font-size: smaller">
+                Estadias
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#tab6">
+              <span class="fa-solid fa-user-tie"></span>
+              <span class="tab-text" style="font-size: smaller">
+                Emprendimiento
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#tab7">
+              <span class="fa-solid fa-chalkboard-user"></span>
+              <span class="tab-text" style="font-size: smaller">
+                Organos Colegiales
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#tab8">
+              <span class="fa-solid fa-inbox"></span>
+              <span class="tab-text" style="font-size: smaller">
+                Búzon de Quejas y Denuncias
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#tab9">
+              <span class="fa-solid fa-address-book"></span>
+              <span class="tab-text" style="font-size: smaller">
+                Contactos
+              </span>
+            </a>
+          </li>
+        </ul>
+
+        <!--Tab1-->
+        <div class="secciones" style="overflow-y: scroll; margin-bottom: 5px">
+          <article id="tab1">
+            <div class="card">
+              <b>
+                <div
+                  class="card-header"
+                  style="
+                    font-size: 26px;
+                    background-color: #0b2e78;
+                    color: #fff;
+                  "
+                >
+                  Mensaje de Nuestra Rectora
+                </div></b
+              >
+              <div class="card-body" style="background-color: #f6f7fa">
+                <br />
+                <img
+                  src="../assets/rectora.jpg"
+                  style="
+                    width: 250px;
+                    height: 350px;
+                    margin-left: 200px;
+                    margin-bottom: 10px;
+                  "
+                  class="card-img"
+                  alt="Imagen de la tarjeta"
+                />
+                <br />
+                <p class="card-text">
+                  Es un gusto muy especial dirigirme a todas y todos los
+                  integrantes de la Comunidad UTL: estudiantado, personal
+                  docente y administrativo, y demás plantilla actoral de nuestro
+                  entorno universitario. Desde marzo ya estamos de regreso a
+                  casa. Y en este deseo de normalizar nuestra vida
+                  universitaria, hemos vivenciado un proceso necesario de
+                  reencuentro, de reconocimiento, para compensar esos meses de
+                  confinamiento que afectaron nuestra forma de relacionarnos
+                  personal y colectivamente.
+                </p>
+                <p class="card-text">
+                  Pero si algo nos define, es que somos una institución
+                  tecnológicamente humana, en innovación y adaptación constante.
+                  Y en esta nueva realidad, que nos enfocamos en dar prioridad a
+                  la salud, atendiendo en todo momento a las medidas sanitarias
+                  para mantener a raya todo contagio.
+                </p>
+                <p class="card-text">
+                  Además, es necesario, como dice nuestro Gobernador Diego
+                  Sinhué Rodríguez, reinventarnos para ser mejores, esto es,
+                  crear nuevas formas de realizar el proceso formativo,
+                  académico, administrativo para que nuestra UTL siga siendo
+                  considerada un bastión importante del ecosistema educativo
+                  guanajuatense.
+                </p>
+                <p class="card-text">
+                  Como bien lo dice nuestro lema “Somos Leones, Somos Leonas”,
+                  les invito a construir entre todos una “guarida segura” donde
+                  prevalezca un ambiente de colaboración y convivencia, donde
+                  nos sintamos a gusto en “nuestra guarida”, promoviendo una
+                  cultura de paz y de respeto a nuestros derechos humanos
+                  fundamentales. Acorde a los nuevos tiempos, mostremos a la
+                  sociedad que la UTL es íntegra, inclusiva y sostenible.
+                </p>
+                <small style="font-weight: bold"
+                  >Yoloxóchitl Bustamante Díez
+                </small>
+                <br />
+                <small>Encargada del Despacho de Rectoría</small>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab2-->
+          <article id="tab2">
+            <div class="container mt-4">
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <br />
+                    </div>
+                    <div class="card-body">
+                      <h3>Solicitud de constancia</h3>
+                      <br />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam minima nulla officia asperiores temporibus omnis?
+                      Nihil tempora unde esse nesciunt quas non harum facilis
+                      commodi repudiandae saepe. Dolor, eos quidem.
+                      <br />
+                      <button type="button" class="btn btn-primary">Ir</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <br />
+                    </div>
+                    <div class="card-body">
+                      <h3>Tramite de credencial</h3>
+                      <br />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam minima nulla officia asperiores temporibus omnis?
+                      Nihil tempora unde esse nesciunt quas non harum facilis
+                      commodi repudiandae saepe. Dolor, eos quidem.
+                      <br />
+                      <button type="button" class="btn btn-primary">Ir</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <br />
+                    </div>
+                    <div class="card-body">
+                      <h3>Tramite de estudiante</h3>
+                      <br />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam minima nulla officia asperiores temporibus omnis?
+                      Nihil tempora unde esse nesciunt quas non harum facilis
+                      commodi repudiandae saepe. Dolor, eos quidem.
+                      <br />
+                      <button type="button" class="btn btn-primary">Ir</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <br />
+                    </div>
+                    <div class="card-body">
+                      <h3>Pago de examen de regularización</h3>
+                      <br />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam minima nulla officia asperiores temporibus omnis?
+                      Nihil tempora unde esse nesciunt quas non harum facilis
+                      commodi repudiandae saepe. Dolor, eos quidem.
+                      <br />
+                      <button type="button" class="btn btn-primary">Ir</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab3-->
+          <article id="tab3">
+            <div class="container mt-4">
+              <div class="card">
+                <div class="card-header">
+                  <h2>Becas</h2>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <p>
+                        <b>La Universidad Tecnológica de León</b>, cuenta con un
+                        sistema de Becas Internas y Externas con el objetivo de
+                        brindar apoyo para que el alumnado pueda continuar con
+                        su preparación académica y aminorar los factores
+                        económicos.
+                      </p>
+                      <p>
+                        ¡Que las cuestiones financieras no sean una limitante
+                        para que puedas continuar con tus estudios!
+                      </p>
+                    </div>
+                    <div class="col align-content-center">
+                      <img
+                        src="https://www.utleon.edu.mx/resource/img/imagenes/2.3.1%20Becas.jpg"
+                        alt=""
+                        style="
+                          width: 450px;
+                          height: 250px;
+                          border-radius: 0px 64px 0px 64px;
+                        "
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab4-->
+          <article id="tab4">
+            <div class="container mt-4">
+              <div class="card">
+                <div class="card-header">
+                  <h3>Servicios Integrales para el alumnado</h3>
+                </div>
+                <div class="card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    nam non minima aspernatur culpa impedit. Dignissimos
+                    deserunt vel ratione delectus voluptatem commodi repellat
+                    nobis tenetur consectetur sunt? Voluptate, nostrum fugit?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptatem dolorum, et sed esse quas autem ipsum quidem
+                    magni minima harum repellat cum. Excepturi ea saepe beatae
+                    ab harum nobis rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab5-->
+          <article id="tab5">
+            <div class="container mt-4">
+              <div class="card">
+                <div class="card-header">
+                  <h3>Estadias</h3>
+                </div>
+                <div class="card-body">
+                  <p>
+                    Es la práctica profesional que realizas como estudiante de TSU o Ingeniería, donde aplicas todos tus conocimientos adquiridos durante tu formación académica, con la elaboración de un proyecto que satisfaga las necesidades de la Empresa. Este proyecto se desarrolla y culmina en un periodo de 13 semanas.
+                  </p>
+                  <p>
+                    En la Estadía:
+                    <ul>
+                      <li>Como estudiante eres guiado por un/a Asesor/a Académico/a (docente de tiempo completo y experto en el área) y un/a Asesor/a Organizacional (persona designada por la organización para tu seguimiento).
+                      </li>
+                      <li>
+                        La organización debe de proporcionarte el espacio, material y equipo necesario para el desarrollo de tu proyecto.
+                      </li>
+                      <li>
+                        Debes contar con algún tipo de Seguridad Social y mantenerlo vigente durante el periodo de Estadía.
+                      </li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab6-->
+          <article id="tab6">
+            <div class="container mt-4">
+              <div class="card">
+                <div class="card-header">
+                  <h3>Emprendimiento Incubación de proyectos</h3>
+                </div>
+                <div class="card-body">
+                  <h4 class="text-secondary">
+                    <b
+                      >¿Sueñas con tener tu propia empresa? Acércate a nosotros.
+                      ¡Te ayudamos a desarrollar tu idea de negocio!</b
+                    >
+                  </h4>
+                  <br />
+                  <p>
+                    Planea, desarrolla y estructura tu modelo de negocio para
+                    asegurar el éxito de tu emprendimiento.
+                  </p>
+                  <p>
+                    El Centro Incubador de Empresas (CIEM) de la UTL es la
+                    entidad encargada de fomentar una cultura de emprendimiento
+                    e innovación para la creación de nuevas empresas a través de
+                    la incubación de negocios, ideas y proyectos, generados
+                    entre la comunidad universitaria y la sociedad en general.
+                  </p>
+                  <p>
+                    Somos una Incubadora reconocida e integrada a la Red de
+                    Incubadoras del Subsistema de Universidades Tecnológicas
+                    (RISUT) y que forma parte de la Red Estatal de Incubadoras
+                    de Guanajuato.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab7-->
+          <article id="tab7">
+            <div class="container mt-4">
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <br />
+                    </div>
+                    <div class="card-body">
+                      <h3>Comisión de Salud UTL</h3>
+                      <br />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam minima nulla officia asperiores temporibus omnis?
+                      Nihil tempora unde esse nesciunt quas non harum facilis
+                      commodi repudiandae saepe. Dolor, eos quidem.
+                      <br />
+                      <button type="button" class="btn btn-primary">Ir</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header">
+                      <br />
+                    </div>
+                    <div class="card-body">
+                      <h3>Cultura de Paz</h3>
+                      <br />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam minima nulla officia asperiores temporibus omnis?
+                      Nihil tempora unde esse nesciunt quas non harum facilis
+                      commodi repudiandae saepe. Dolor, eos quidem.
+                      <br />
+                      <button type="button" class="btn btn-primary">Ir</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab8-->
+          <article id="tab8">
+            <div class="container mt-4">
+              <div class="card">
+                <div class="card-header">
+                  <h2>
+                    Buzón de Quejas y Denuncias
+                  </h2>
+                </div>
+                <div class="card-body">
+                  <h3 class="text-secondary">
+                    Estimado estudiante, en caso de presentar alguna situación te invitamos a presentar tu queja o denuncia, deberás:
+                  </h3>
+                  <br>
+                  <ol>
+                    <li>
+                      Escribir tus datos completos, en caso de así considerarlo (No obligatorio).
+                    </li>
+                    <li>
+                      Colocar tu correo electrónico para poder dar seguimiento puntual.
+                    </li>
+                    <li>
+                      Plantear la queja señalando, tiempo, modo y lugar.
+                    </li>
+                    <li>
+                      El contenido no debe ser con lenguaje impropio.
+                    </li>
+                  </ol>
+                  <br>
+                  <form>
+                    <div class="form-group">
+                      <label for="nombre">Nombre:</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nombre"
+                        placeholder="Nombre"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="motivo">Asunto:</label>
+                      <select class="form-control" id="motivo">
+                        <option selected>
+                          Selecciona una opción
+                        </option>
+                        <option value="1" >
+                          Felicitaciones
+                        </option>
+                        <option value="2">
+                          Dudas
+                        </option>
+                        <option value="3">
+                          Comentarios
+                        </option>
+                        <option value="4">
+                          Sugerencias
+                        </option>
+                        <option value="5">
+                          Quejas
+                        </option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="mensaje">Mensaje:</label>
+                      <textarea
+                        class="form-control"
+                        id="mensaje"
+                        rows="5"
+                        placeholder="Escribe tu mensaje"
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                      Enviar Correo
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab7-->
+          <article id="tab9">
+            <div class="container mt-4">
+              <div class="card">
+                <div class="card-header">
+                  <h3>Directorio</h3>
+                </div>
+                <div class="card-body">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Ext.</th>
+                        <th>Nombre</th>
+                        <th>Puesto</th>
+                        <th>Depto.</th>
+                        <th>Correo Electrónico</th>
+                        <th>Servicio</th>
+                        <th>Edificio</th>
+                        <th>Planta</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>128</td>
+                        <td>Liliana Estrada Afanador</td>
+                        <td>Jefatura de Servicios Escolares</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>lestrada@utleon.edu.mx</td>
+                        <td>Servicios Escolares</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>202</td>
+                        <td>Laura Berenice Rodríguez Rangel</td>
+                        <td>Subdirectora de Servicios Estudiantiles</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>lrodriguezr@utleon.edu.mx</td>
+                        <td>Servicios Escolares</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>206</td>
+                        <td>Alma Delia Salazar Arteaga</td>
+                        <td>Titulación</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>aarteaga@utleon.edu.mx</td>
+                        <td>Titulación</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>209</td>
+                        <td>María de Lourdes Barrios</td>
+                        <td>Coordinadora</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>mbarrios@utleon.edu.mx</td>
+                        <td>Planes y Programas de Estudio</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>210</td>
+                        <td>José Omar Ramírez Barajas</td>
+                        <td>Control de Planeación Escolar</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>jramirezb@utleon.edu.mx</td>
+                        <td>Bajas</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>296</td>
+                        <td>Luis Alejandro Gonzalez Castro</td>
+                        <td>Asesor Estudiantil</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>lgonzalezc@utleon.edu.mx</td>
+                        <td>Asesor de Escolares</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>297</td>
+                        <td>Brenda Isabel Tellez Reyes</td>
+                        <td>Asesor de Atención a Alumnos</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>btellez@utleon.edu.mx</td>
+                        <td>Asesor de Escolares</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>298</td>
+                        <td>Janet Alejandra Rocha Gómez</td>
+                        <td>Secretaria de jefe de departamento</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>jarocha@utleon.edu.mx</td>
+                        <td>Departamento</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>422</td>
+                        <td>Archivo Servicios Estudiantiles</td>
+                        <td>Secretaria de jefe de departamento</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td></td>
+                        <td>Departamento</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <!--Pie de página-->
+    <footer style="background-color: #000c34; text-align: center">
+      <!--Logos de pie de página-->
+      <img
+        src="../assets/logos.jpg"
+        style="border: gray 1px solid; width: 1120px"
+        alt=""
+      />
+      <div style="background-color: #009379">
+        <br />
+      </div>
+      <br />
+      <div class="row-cols-1">
+        <div class="col-12" style="color: #fff; font-size: smaller">
+          <p>Blvd. Universidad Tecnológica #225 Col. San Carlos</p>
+        </div>
+        <div class="col-12" style="color: #fff; font-size: smaller">
+          <p>CP. 37670 León, Gto. Mex. l Tel (477) 7 10 00 20</p>
+        </div>
+        <div
+          class="col-12"
+          style="
+            color: #009379;
+            font-size: smaller;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+          "
+        >
+          <p [href]="url">Aviso de Privacidad Simplificado</p>
+          <p style="color: #fff; padding: 5px">|</p>
+          <p [href]="url">Aviso de Privacidad Integral</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="../JS/index.js"></script>
+  </body>
+</html>
