@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/empresario.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!--Icon-->
+    <link rel="icon" href="/assets/UTL.png" type="image/png" />
+    <title>Soy Empresario</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary"
+      style="
+        height: 90px;
+        background: linear-gradient(120deg, #000c34 19.2%, #009379 85.8%);
+      "
+    >
+      <div class="container-fluid" style="margin-top: 10px">
+        <a class="navbar-brand" href="../index.html"
+          ><img
+            src="../assets/UTL.png"
+            style="width: 60px; height: 60px; margin-right: 5px"
+            alt=""
+          />
+        </a>
+        <div
+          style="
+            display: inline-block;
+            color: white;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            text-align: left;
+            font-size: large;
+          "
+        >
+          Universidad Tecnológica de León
+          <p
+            style="
+              color: white;
+              font-size: 14px;
+              font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+              text-align: left;
+            "
+          >
+            Ser, Saber, Hacer
+          </p>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="width: 180px">
+              <p
+                id="fecha-hora"
+                style="color: white; font-size: 12px; margin-left: 30px"
+              ></p>
+            </li>
+          </ul>
+          <button
+            id="menu-toggle"
+            class="btn"
+            type="button"
+            style="
+              border-style: none;
+              margin-left: 480px;
+              background-color: transparent;
+            "
+          >
+            <img
+              src="../assets/menu-icon1.png"
+              style="color: white; width: 40px; height: 40px"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
+    </nav>
+    <br />
+    <h1 style="margin-left: 20px">Soy Empresario</h1>
+    <hr
+      style="
+        color: #000000;
+        font-weight: bold;
+        font-size: large;
+        margin-left: 20px;
+        margin-right: 20px;
+      "
+    />
+    <br />
+
+    <!--Barra lateral-->
+    <div id="sidebar" class="sidebar">
+      <button
+        id="close-btn"
+        class="close-btn btn-close-white"
+        style="margin-left: 10px; border-radius: 5px"
+      >
+        X
+      </button>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="#">Somos UTL</a></li>
+        <li><a href="soyAspirante.html">Soy Aspirante</a></li>
+        <li><a href="soyEstudiante.html">Soy Estudiante</a></li>
+        <li><a href="soyDocente.html">Soy Docente</a></li>
+        <li>
+          <a href="soyAdministrativo.html">Soy Administrativo/a</a>
+        </li>
+        <li><a href="soyEmpresario.html">Soy Empresario/a</a></li>
+        <li><a href="../soyEgresado.html">Soy Egresado/a</a></li>
+      </ul>
+    </div>
+
+    <!--Contenido de la página-->
+    <div class="Container" style="margin-left: 50px">
+      <div class="wrap">
+        <ul class="tabs" style="border-radius: 30px 30px 0 0">
+          <li>
+            <a href="#tab1"
+              ><span class="fa fa-home" style="font-size: smaller"></span
+              ><span class="tab-text" style="font-size: smaller"
+                >Nuestra Rectora</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#tab2"
+              ><span
+                ><i
+                  class="fa-regular fa-file-lines"
+                  style="font-size: smaller"
+                ></i></span
+              ><span class="tab-text" style="font-size: smaller"
+                >Conoce UTL</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#tab3"
+              ><span
+                class="fa-solid fa-graduation-cap"
+                style="font-size: smaller"
+              ></span
+              ><span class="tab-text" style="font-size: smaller"
+                >Conoce Programas Educativos</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#tab4">
+              <span style="font-size: smaller"></span>
+              <span class="tab-text" style="font-size: smaller">
+                Vinculación empresarial
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#tab5">
+              <span class="fa-solid fa-briefcase"></span>
+              <span class="tab-text" style="font-size: smaller">
+                Servicios a la Industria
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#tab6">
+              <span class="fa-solid fa-address-book"></span>
+              <span class="tab-text" style="font-size: smaller">
+                Contactos
+              </span>
+            </a>
+          </li>
+        </ul>
+
+        <!--Tab1-->
+        <div class="secciones" style="overflow-y: scroll; margin-bottom: 5px">
+          <article id="tab1">
+            <div class="card">
+              <b>
+                <div
+                  class="card-header"
+                  style="
+                    font-size: 26px;
+                    background-color: #0b2e78;
+                    color: #fff;
+                  "
+                >
+                  Mensaje de Nuestra Rectora
+                </div></b
+              >
+              <div class="card-body" style="background-color: #f6f7fa">
+                <br />
+                <img
+                  src="../assets/rectora.jpg"
+                  style="
+                    width: 250px;
+                    height: 350px;
+                    margin-left: 200px;
+                    margin-bottom: 10px;
+                  "
+                  class="card-img"
+                  alt="Imagen de la tarjeta"
+                />
+                <br />
+                <p class="card-text">
+                  Es un gusto muy especial dirigirme a todas y todos los
+                  integrantes de la Comunidad UTL: estudiantado, personal
+                  docente y administrativo, y demás plantilla actoral de nuestro
+                  entorno universitario. Desde marzo ya estamos de regreso a
+                  casa. Y en este deseo de normalizar nuestra vida
+                  universitaria, hemos vivenciado un proceso necesario de
+                  reencuentro, de reconocimiento, para compensar esos meses de
+                  confinamiento que afectaron nuestra forma de relacionarnos
+                  personal y colectivamente.
+                </p>
+                <p class="card-text">
+                  Pero si algo nos define, es que somos una institución
+                  tecnológicamente humana, en innovación y adaptación constante.
+                  Y en esta nueva realidad, que nos enfocamos en dar prioridad a
+                  la salud, atendiendo en todo momento a las medidas sanitarias
+                  para mantener a raya todo contagio.
+                </p>
+                <p class="card-text">
+                  Además, es necesario, como dice nuestro Gobernador Diego
+                  Sinhué Rodríguez, reinventarnos para ser mejores, esto es,
+                  crear nuevas formas de realizar el proceso formativo,
+                  académico, administrativo para que nuestra UTL siga siendo
+                  considerada un bastión importante del ecosistema educativo
+                  guanajuatense.
+                </p>
+                <p class="card-text">
+                  Como bien lo dice nuestro lema “Somos Leones, Somos Leonas”,
+                  les invito a construir entre todos una “guarida segura” donde
+                  prevalezca un ambiente de colaboración y convivencia, donde
+                  nos sintamos a gusto en “nuestra guarida”, promoviendo una
+                  cultura de paz y de respeto a nuestros derechos humanos
+                  fundamentales. Acorde a los nuevos tiempos, mostremos a la
+                  sociedad que la UTL es íntegra, inclusiva y sostenible.
+                </p>
+                <small style="font-weight: bold"
+                  >Yoloxóchitl Bustamante Díez
+                </small>
+                <br />
+                <small>Encargada del Despacho de Rectoría</small>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab2-->
+          <article id="tab2">
+            <div class="container mt-4">
+              <div class="card" style="padding: 10px">
+                <div class="row">
+                  <div class="col-md-4 mb-3">
+                    <img
+                      src="../assets/leon.jpg"
+                      style="height: 380px"
+                      class="card-img"
+                      alt="Imagen de la tarjeta"
+                    />
+                  </div>
+                  <div class="col-md-8 mb-3" style="background-color: #f6f7fa">
+                    <div class="card-body">
+                      <h5 class="card-title">Historia</h5>
+                      <p class="card-text">
+                        La Universidad Tecnológica de León inició su
+                        funcionamiento el 26 de septiembre de 1995, con la
+                        inauguración de cursos efectuada por el C. Vicente Fox
+                        Quesada, Gobernador Constitucional del Estado de
+                        Guanajuato, ante la presencia de altas personalidades
+                        del gobierno federal, estatal, municipal y la comunidad
+                        universitaria. Desde el 25 de septiembre de 1995 y hasta
+                        la fecha, formamos ciudadanos y ciudadanas de bien, con
+                        pensamiento global y acción local, con innovación,
+                        profundos valores humanos y universales y sobre todo,
+                        brindando educación tecnológica y de calidad, orientada
+                        a la industria 4.0 y la mente-factura”.
+                      </p>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="col-12 mb-3">
+                        <div class="card mb-3">
+                            <div class="card-header"><h2>Filosofía</h2></div>
+                            <img
+                                src="https://www.utleon.edu.mx/resource/img/imagenes/empresario/filosofia.jpg"
+                                class="card-img-top"
+                                alt="filosofia"
+                                style="padding: 5px"
+                            />
+                            <div class="card-body" style="padding: 5px">
+                                <h5 class="card-title" style="color: #500202; font-weight: bold;">Misión</h5>
+                                <hr
+                                style="
+                                    color: #500202;
+                                    font-weight: bold;
+                                    font-size: large;
+                                "
+                                />
+                                <p class="card-text">
+                                    Formar ciudadanos/as del mundo con educación tecnológica de calidad a través de la docencia, la investigación aplicada, la difusión del conocimiento y la vinculación, que contribuyan a la innovación y al desarrollo sustentable.
+                                </p>
+                                <br>
+                                <h5 class="card-title" style="color: #500202; font-weight: bold;">Visión</h5>
+                                <hr
+                                style="
+                                    color: #500202;
+                                    font-weight: bold;
+                                    font-size: large;
+                                "
+                                />
+                                <p class="card-text">
+                                    Somos una Universidad reconocida por su calidad internacional, sus aportaciones al desarrollo de la tecnología y al bienestar de la sociedad.
+                                </p>
+                                <br>
+                                <h5 class="card-title" style="color: #500202; font-weight: bold;" >Valores</h5>
+                                <hr
+                                style="
+                                    color: #500202;
+                                    font-weight: bold;
+                                    font-size: large;
+                                "
+                                />
+                                <p class="card-text">
+                                    <ul>
+                                        <li>
+                                            <p><b>Dignidad:</b>
+                                                Es el valor intrínseco de las personas, así como de los objetos y situaciones en cuanto contribuyen a la realización personal.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><b>Honestidad:</b>
+                                                Tener conciencia clara de lo que está bien en nuestra propia conducta y en nuestra relación con los demás.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><b>Libertad:</b>
+                                                Tomar decisiones propias y expresar ideales aceptando las diferencias con el resto de las personas.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><b>Búsqueda de la verdad:</b>
+                                                Cualidad de la inteligencia por la cual el ser humano se capacita y perfecciona para llegar a las causas de las cosas.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p><b>Responsabilidad:</b>
+                                                Cumplir con las obligaciones y trabajos asignados según las normas establecidas.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab3-->
+          <article id="tab3">
+            <div class="container mt-4">
+              <div class="card">
+                <div class="card-header">
+                  <h2>Programas educativos</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                              <div class="card-header">
+                                <br />
+                              </div>
+                              <div class="card-body">
+                                <h2>TSU</h2>
+                                <a type="button" class="btn btn-primary" href="soyAspirante.html">Ir</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card">
+                              <div class="card-header">
+                                <br />
+                              </div>
+                              <div class="card-body">
+                                <h2>Licenciatura/Ingeniería</h2>
+                                <a type="button" class="btn btn-primary" href="soyAspirante.html">Ir</a>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab4-->
+          <article id="tab4">
+            <div class="container mt-4">
+              <div class="card">
+                <div class="card-header">
+                  <h2>Estadías Empresariales</h2>
+                </div>
+                <img class="card-img-top" src="https://www.utleon.edu.mx/resource/img/imagenes/empresario/ESTADIAS_EMPRESARIALES.jpg" alt="estadias empresariales" style="border-radius: 0px 64px 0px 64px; padding: 10px;" width="800px" height="500px">
+                <div class="card-body" >
+                    <br>
+                  <p class="card-text">
+                    La Estadía es la práctica profesional de Técnico/a Superior Universitario/a (TSU) o de nivel Licenciatura o Ingeniería donde el estudiante desarrolla un proyecto real del área relacionada con la carrera que cursa.
+                  </p>
+                  <p class="card-text">
+                    Dicha estadía se desarrolla en un periodo de 13 semanas.
+                  </p>
+                  <ul>
+                    <li>
+                        <p class="card-text">
+                            El estudiante es guiado por un/a Asesor/a Académico/a (docente de tiempo completo y experto en el área) y un/a Asesor/a Organizacional (persona designada por la organización para el seguimiento del proyecto).
+                        </p>
+                    </li>
+                    <li>
+                        <p class="card-text">
+                            Se le debe proporcionar al estudiantado el espacio, material y equipo necesario para desarrollar el proyecto.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="card-text">
+                            Firmar el Convenio Individual
+                        </p>
+                    </li>
+                  </ul>
+                  <br>
+                  <h4 class="card-title" style="color: #500202; font-weight: bold;">Nota</h4>
+                  <hr>
+                  <ul>
+                    <li>
+                        <p class="card-text">
+                            El Alumno debe presentarse con algún tipo de seguridad social para poder realizar las estadías en su empresa.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="card-text">
+                            A la organización no le implica costo ni responsabilidades laborales con los estudiantes.
+                        </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <br>
+              <div class="card">
+                <div class="card-header">
+                    <h2>
+                        Bolsa de Trabajo
+                    </h2>
+                </div>
+                <img class="card-img-top mb-3" src="https://www.utleon.edu.mx/resource/img/imagenes/empresario/Bolsa%20de%20Trabajo.JPG" alt="estadias empresariales" style="border-radius: 0px 64px 0px 64px; padding: 10px; width: 100%; height: 50%; justify-content: center;">
+                <div class="card-body" >
+                    <div class="card-body">
+                        <p class="card-text">
+                            La bolsa de trabajo de egresados/as de la UTL es un espacio para que las empresas, instituciones y organizaciones puedan ofertar sus vacantes y la comunidad de egresados y egresadas de UTL tengan acceso.
+                        </p>
+                        <h4 class="card-title" style="color: #500202; font-weight: bold;">Publica tus Vacantes en la Bolsa de Trabajo</h4>
+                        <hr>
+                        <button type="button" class="btn" style="background-color: #500202; color: #fff;">Proceso de alta de vacantes</button>
+                        <br>
+                        <br>
+                        <h4 class="card-title" style="color: #500202; font-weight: bold;">Conoce Nuestra Oferta Educativa</h4>
+                        <hr>
+                        <button type="button" class="btn" style="background-color: #500202; color: #fff;">Carreras TSU</button>
+                        <br>
+                        <br>
+                        <button type="button" class="btn" style="background-color: #500202; color: #fff;">Carreras LIC/ING</button>
+                    </div>
+              </div>
+            </div>
+          </article>
+
+          <!--Tab5-->
+          <article id="tab5">
+            <div class="container mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>
+                            Capacitación Empresarial
+                        </h2>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Impulsamos la vinculación académica con los sectores productivo y social en la aportación de soluciones tecnológicas y de capacitación a necesidades específicas, a través de estrategias innovadoras, que contribuyan al desarrollo sustentable de la región.
+                        </p>
+                        <br>
+                        <img class="card-img-bottom" src="https://www.utleon.edu.mx/resource/img/imagenes/empresario/capacitacion.jpeg" alt="estadias empresariales" style="border-radius: 0px 64px 0px 64px; padding: 10px;" width="800px" height="500px">
+                    <div class="card-body" >
+                    </div>
+                </div>
+            </div>
+          </article>
+
+          <!--Tab6-->
+          <article id="tab6">
+            <div class="container mt-4">
+              <div class="card">
+                <div class="card-header">
+                  <h3>Directorio</h3>
+                </div>
+                <div class="card-body">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Ext.</th>
+                        <th>Nombre</th>
+                        <th>Puesto</th>
+                        <th>Depto.</th>
+                        <th>Correo Electrónico</th>
+                        <th>Servicio</th>
+                        <th>Edificio</th>
+                        <th>Planta</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>128</td>
+                        <td>Liliana Estrada Afanador</td>
+                        <td>Jefatura de Servicios Escolares</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>lestrada@utleon.edu.mx</td>
+                        <td>Servicios Escolares</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>202</td>
+                        <td>Laura Berenice Rodríguez Rangel</td>
+                        <td>Subdirectora de Servicios Estudiantiles</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>lrodriguezr@utleon.edu.mx</td>
+                        <td>Servicios Escolares</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>206</td>
+                        <td>Alma Delia Salazar Arteaga</td>
+                        <td>Titulación</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>aarteaga@utleon.edu.mx</td>
+                        <td>Titulación</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>209</td>
+                        <td>María de Lourdes Barrios</td>
+                        <td>Coordinadora</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>mbarrios@utleon.edu.mx</td>
+                        <td>Planes y Programas de Estudio</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>210</td>
+                        <td>José Omar Ramírez Barajas</td>
+                        <td>Control de Planeación Escolar</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>jramirezb@utleon.edu.mx</td>
+                        <td>Bajas</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>296</td>
+                        <td>Luis Alejandro Gonzalez Castro</td>
+                        <td>Asesor Estudiantil</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>lgonzalezc@utleon.edu.mx</td>
+                        <td>Asesor de Escolares</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>297</td>
+                        <td>Brenda Isabel Tellez Reyes</td>
+                        <td>Asesor de Atención a Alumnos</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>btellez@utleon.edu.mx</td>
+                        <td>Asesor de Escolares</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>298</td>
+                        <td>Janet Alejandra Rocha Gómez</td>
+                        <td>Secretaria de jefe de departamento</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td>jarocha@utleon.edu.mx</td>
+                        <td>Departamento</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                      <tr>
+                        <td>422</td>
+                        <td>Archivo Servicios Estudiantiles</td>
+                        <td>Secretaria de jefe de departamento</td>
+                        <td>Subdirección de Servicios Estudiantiles</td>
+                        <td></td>
+                        <td>Departamento</td>
+                        <td>CVD</td>
+                        <td>Baja</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!--Pie de página-->
+    <footer style="background-color: #000c34; text-align: center">
+      <!--Logos de pie de página-->
+      <img
+        src="../assets/logos.jpg"
+        style="border: gray 1px solid; width: 1120px"
+        alt=""
+      />
+      <div style="background-color: #009379">
+        <br />
+      </div>
+      <br />
+      <div class="row-cols-1">
+        <div class="col-12" style="color: #fff; font-size: smaller">
+          <p>Blvd. Universidad Tecnológica #225 Col. San Carlos</p>
+        </div>
+        <div class="col-12" style="color: #fff; font-size: smaller">
+          <p>CP. 37670 León, Gto. Mex. l Tel (477) 7 10 00 20</p>
+        </div>
+        <div
+          class="col-12"
+          style="
+            color: #009379;
+            font-size: smaller;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+          "
+        >
+          <p [href]="url">Aviso de Privacidad Simplificado</p>
+          <p style="color: #fff; padding: 5px">|</p>
+          <p [href]="url">Aviso de Privacidad Integral</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="../JS/index.js"></script>
+  </body>
+</html>
